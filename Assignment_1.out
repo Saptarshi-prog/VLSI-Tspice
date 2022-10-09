@@ -1,0 +1,276 @@
+* Key: da0d87d9648296bd5acf74b4224867d8
+* T-Spice Demo 9.12 Simulation	Sun Oct 09 18:35:59 2022	F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_1.sp
+* Command line: tspice -o "F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_1.out" "F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_1.sp" 
+* T-Spice Win32 Demo 9.12.20040112.04:26:10
+* Operating System: Windows NT/95
+* Warning : Source perimeter (PS) is zero for MOSFET device M1
+* Warning : Drain perimeter (PD) is zero for MOSFET device M1
+
+*SEDIT: Alter blocks = 0
+
+* 
+* Device and node counts:
+*             MOSFETs - 1                 MOSFET geometries - 1       
+*                BJTs - 0                             JFETs - 0       
+*             MESFETs - 0                            Diodes - 0       
+*          Capacitors - 0                         Resistors - 0       
+*           Inductors - 0                  Mutual inductors - 0       
+*  Transmission lines - 0        Coupled transmission lines - 0       
+*     Voltage sources - 3                   Current sources - 0       
+*                VCVS - 0                              VCCS - 0       
+*                CCVS - 0                              CCCS - 0       
+*    V-control switch - 0                  I-control switch - 0       
+*       Macro devices - 0        External C model instances - 0       
+*         Subcircuits - 0              Subcircuit instances - 0       
+*   Independent nodes - 0                    Boundary nodes - 4       
+*         Total nodes - 4       
+
+* *** 2 WARNING MESSAGES GENERATED DURING SETUP
+
+
+*SEDIT: Alter=0
+*SEDIT: Analysis types DCOP 1 ACMODEL 1 AC 0 TRANSIENT 0 TRANSFER 1 NOISE 0 
+
+* BEGIN NON-GRAPHICAL DATA
+
+DC ANALYSIS
+v(1) =   1.0000e+000
+v(2) =   5.0000e+000
+v(3) =   5.0000e+000
+i(VDS) =  -1.7820e-005
+i(VX) =   1.7820e-005
+i(VGS) =  -0.0000e+000
+i(VX) =   1.7820e-005
+
+* END NON-GRAPHICAL DATA
+
+* BEGIN NON-GRAPHICAL DATA
+
+AC SMALL-SIGNAL MODELS
+
+              0          
+              M1           
+MODEL         MOS1         
+TYPE          NMOS         
+REGION        Saturation   
+ID              17.82000u
+IBS              0.      
+IBD            -50.00000f
+VGS              1.00000 
+VDS              5.00000 
+VBS              0.      
+VTH            699.99988m
+VDSAT          300.00063m
+RS               0.      
+RD               0.      
+GM             118.80000u
+GDS            594.00000n
+GMB             28.39863u
+GBD             10.00000f
+GBS            389.22857f
+CDTOT          345.31330a
+CGTOT            1.03594f
+CSTOT          345.31330a
+CBTOT          345.31330a
+CGS            345.31330a
+CGD            345.31330a
+CGB            345.31330a
+CBD              0.      
+CBS              0.      
+
+
+* VOLTAGE SOURCES
+
+              1             2             3          
+              VDS           VX            VGS          
+VOLTAGE          5.00000       0.            1.00000 
+CURRENT        -17.82001u     17.82001u      0.      
+POWER          -89.10003u      0.            0.      
+
+
+Element name cross-reference:
+      0 : M1
+      1 : VDS
+      2 : VX
+      3 : VGS
+
+* END NON-GRAPHICAL DATA
+
+*WEDIT: XFER cycles VDS  26 VGS  5
+*WEDIT: .dc VDS        0        5      0.2
+*+ VGS        1        5        1
+TRANSFER ANALYSIS
+       VDS<V>     i(VX)<A>
+ 0.0000e+000  0.0000e+000
+ 2.0000e-001  1.3306e-005
+ 4.0000e-001  1.5088e-005
+ 6.0000e-001  1.5206e-005
+ 8.0000e-001  1.5325e-005
+ 1.0000e+000  1.5444e-005
+ 1.2000e+000  1.5563e-005
+ 1.4000e+000  1.5682e-005
+ 1.6000e+000  1.5800e-005
+ 1.8000e+000  1.5919e-005
+ 2.0000e+000  1.6038e-005
+ 2.2000e+000  1.6157e-005
+ 2.4000e+000  1.6276e-005
+ 2.6000e+000  1.6394e-005
+ 2.8000e+000  1.6513e-005
+ 3.0000e+000  1.6632e-005
+ 3.2000e+000  1.6751e-005
+ 3.4000e+000  1.6870e-005
+ 3.6000e+000  1.6988e-005
+ 3.8000e+000  1.7107e-005
+ 4.0000e+000  1.7226e-005
+ 4.2000e+000  1.7345e-005
+ 4.4000e+000  1.7464e-005
+ 4.6000e+000  1.7582e-005
+ 4.8000e+000  1.7701e-005
+ 5.0000e+000  1.7820e-005
+ 0.0000e+000  0.0000e+000
+ 2.0000e-001  7.9834e-005
+ 4.0000e-001  1.4752e-004
+ 6.0000e-001  2.0275e-004
+ 8.0000e-001  2.4520e-004
+ 1.0000e+000  2.7456e-004
+ 1.2000e+000  2.9051e-004
+ 1.4000e+000  2.9447e-004
+ 1.6000e+000  2.9670e-004
+ 1.8000e+000  2.9893e-004
+ 2.0000e+000  3.0116e-004
+ 2.2000e+000  3.0339e-004
+ 2.4000e+000  3.0562e-004
+ 2.6000e+000  3.0785e-004
+ 2.8000e+000  3.1008e-004
+ 3.0000e+000  3.1231e-004
+ 3.2000e+000  3.1454e-004
+ 3.4000e+000  3.1677e-004
+ 3.6000e+000  3.1900e-004
+ 3.8000e+000  3.2124e-004
+ 4.0000e+000  3.2347e-004
+ 4.2000e+000  3.2570e-004
+ 4.4000e+000  3.2793e-004
+ 4.6000e+000  3.3016e-004
+ 4.8000e+000  3.3239e-004
+ 5.0000e+000  3.3462e-004
+ 0.0000e+000  0.0000e+000
+ 2.0000e-001  1.4636e-004
+ 4.0000e-001  2.8164e-004
+ 6.0000e-001  4.0550e-004
+ 8.0000e-001  5.1765e-004
+ 1.0000e+000  6.1776e-004
+ 1.2000e+000  7.0551e-004
+ 1.4000e+000  7.8060e-004
+ 1.6000e+000  8.4269e-004
+ 1.8000e+000  8.9148e-004
+ 2.0000e+000  9.2664e-004
+ 2.2000e+000  9.4787e-004
+ 2.4000e+000  9.5664e-004
+ 2.6000e+000  9.6363e-004
+ 2.8000e+000  9.7061e-004
+ 3.0000e+000  9.7759e-004
+ 3.2000e+000  9.8457e-004
+ 3.4000e+000  9.9156e-004
+ 3.6000e+000  9.9854e-004
+ 3.8000e+000  1.0055e-003
+ 4.0000e+000  1.0125e-003
+ 4.2000e+000  1.0195e-003
+ 4.4000e+000  1.0265e-003
+ 4.6000e+000  1.0335e-003
+ 4.8000e+000  1.0404e-003
+ 5.0000e+000  1.0474e-003
+ 0.0000e+000  0.0000e+000
+ 2.0000e-001  2.1289e-004
+ 4.0000e-001  4.1575e-004
+ 6.0000e-001  6.0826e-004
+ 8.0000e-001  7.9010e-004
+ 1.0000e+000  9.6096e-004
+ 1.2000e+000  1.1205e-003
+ 1.4000e+000  1.2685e-003
+ 1.6000e+000  1.4045e-003
+ 1.8000e+000  1.5282e-003
+ 2.0000e+000  1.6394e-003
+ 2.2000e+000  1.7378e-003
+ 2.4000e+000  1.8229e-003
+ 2.6000e+000  1.8945e-003
+ 2.8000e+000  1.9522e-003
+ 3.0000e+000  1.9958e-003
+ 3.2000e+000  2.0250e-003
+ 3.4000e+000  2.0412e-003
+ 3.6000e+000  2.0556e-003
+ 3.8000e+000  2.0700e-003
+ 4.0000e+000  2.0843e-003
+ 4.2000e+000  2.0987e-003
+ 4.4000e+000  2.1131e-003
+ 4.6000e+000  2.1275e-003
+ 4.8000e+000  2.1418e-003
+ 5.0000e+000  2.1562e-003
+ 0.0000e+000  0.0000e+000
+ 2.0000e-001  2.7942e-004
+ 4.0000e-001  5.4986e-004
+ 6.0000e-001  8.1101e-004
+ 8.0000e-001  1.0625e-003
+ 1.0000e+000  1.3042e-003
+ 1.2000e+000  1.5355e-003
+ 1.4000e+000  1.7563e-003
+ 1.6000e+000  1.9663e-003
+ 1.8000e+000  2.1650e-003
+ 2.0000e+000  2.3522e-003
+ 2.2000e+000  2.5276e-003
+ 2.4000e+000  2.6909e-003
+ 2.6000e+000  2.8417e-003
+ 2.8000e+000  2.9797e-003
+ 3.0000e+000  3.1046e-003
+ 3.2000e+000  3.2162e-003
+ 3.4000e+000  3.3139e-003
+ 3.6000e+000  3.3977e-003
+ 3.8000e+000  3.4671e-003
+ 4.0000e+000  3.5218e-003
+ 4.2000e+000  3.5615e-003
+ 4.4000e+000  3.5878e-003
+ 4.6000e+000  3.6122e-003
+ 4.8000e+000  3.6366e-003
+ 5.0000e+000  3.6610e-003
+
+* SIMULATION STATISTICS:
+*   DC operating point
+*     Total DC operating points           = 2
+*     Total Newton iterations             = 0
+*     Total Current evaluations           = 2
+*   DC sweep
+*     DC transfer points                  = 129
+*       Successful transfer points        = 129
+*       Failed transfer points            = 0
+*
+*   Matrix statistics:          OP           DC
+*     Matrix factors             0            0
+*     Matrix solves              0            0
+*     Size                       0            0
+*     Initial elements           0            0
+*     Final elements             0            0
+*     Fill-ins                   0            0
+*     Initial density         0.00%        0.00%
+*     Final density           0.00%        0.00%
+*
+*   Total matrix factorizations           = 0
+*   Total matrix-vector solves            = 0
+*   Total matrix solve time (seconds)     = 0           
+*
+*   T-Spice process times
+*     Newton solver                0.02 seconds
+*     Current evaluations          0.02 seconds
+*     Jacobian construction        0.00 seconds
+*     Linear solver                0.00 seconds
+*
+*
+
+* Parsing                      0.01 seconds
+* Setup                        0.01 seconds
+* DC operating point           0.00 seconds
+* DC Analysis                  0.02 seconds
+* Overhead                     0.06 seconds
+* -----------------------------------------
+* Total                        0.09 seconds
+
+
+* End of T-Spice output file
