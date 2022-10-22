@@ -1,8 +1,3 @@
-* Key: 4dcb48d4dd9a30e220fd342d6418e44f
-* T-Spice Demo 9.12 Simulation	Sun Oct 09 20:54:21 2022	F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_3.sp
-* Command line: tspice -o "F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_3.out" "F:\IIT Dhanbad\1st Semester\Digital VLSI Lab\Day 1\Assignment_3.sp" 
-* T-Spice Win32 Demo 9.12.20040112.04:26:10
-* Operating System: Windows NT/95
 * Warning : Source perimeter (PS) is zero for MOSFET device M1
 * Warning : Drain perimeter (PD) is zero for MOSFET device M1
 * Warning : Source perimeter (PS) is zero for MOSFET device M2
