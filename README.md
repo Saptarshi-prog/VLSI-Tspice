@@ -1,1 +1,1 @@
-# VLSI-Lab-Tspice
+# VLSI-Tspice
